@@ -11,10 +11,9 @@ body{
     display: flex;
     /*Se utiliza para dejar en la misma 
     posicision el objeto asi se mueva la pantalla*/
-    column-count: 5;
-    column-rule:  30px;
+    position: -webkit-sticky; /* Safari */
     position: sticky;
-
+    top: 0;
 
 }
 .indice p{
@@ -35,6 +34,7 @@ body{
     margin-left: 2%;
     font-size: 30px;
     margin: 0%;
+    margin-left: 10px;
 
 }
 p{
@@ -87,7 +87,9 @@ h3{
     color: white;
 }
 .img_perfil{
-    width: 35%;
+    /*border: 1px solid blue;*/
+    /*padding: 510x;*/
+    width: 45%;
 }
 .hoj_presen{
     background-color: rgb(54, 49, 49);
@@ -165,11 +167,8 @@ h3{
     width: 100%;
 }
 .caj_ima{
-    width: 200px;
-    height: 200px;
-}
-#ima1{
-    background-image: url("./imagenes/pensamiento_critico.png");
+    width: 150px;
+    height: 150px;
 }
 
 .caj_tex{
@@ -177,9 +176,9 @@ h3{
     justify-content: center;
     background-color: white;
     align-items: center;
-    width: 200px;
-    height: 30px;
-    margin-bottom: 5%;
+    width: 150px;
+    height: 20px;
+    /*margin-bottom: 5%;*/
 }
 .caj_tex h4{
     color:rgb(68, 63, 63);
@@ -195,6 +194,9 @@ h3{
     margin-right: 20%;
     background-color: rgb(63, 61, 61);
 
+}
+#obj_per{
+    width: 100%;
 }
 .pre_perso{
     display: flex;
@@ -298,6 +300,10 @@ h3{
     margin-left: 2%;
 }
 /*Final*/
+.obj_per{
+    display: block;
+    border:2px solid red;
+}
 .final{
     display: flex;
     justify-content: center;
